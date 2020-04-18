@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css2?family=Alef:wght@700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="container">
+    <div class="container__inner">
+      <h1 class="container__title">Welcome to Simon</h1>
+
+      <div class="container__play-area">
+        <div class="container__overlay container__overlay--introdution">
+          <p>Please press <strong>spacebar</strong> to start, or tap 'Start game'.</p>
+          <button type="button" class="button button--start">Start game</button>
+        </div>
+
+        <div class="container__overlay container__overlay--game-over container__overlay--hidden">
+          <h2>Game over</h2>
+
+          <p>You reached level <span class="container__game-level"></span>.</p>
+
+          <button type="button" class="button button--start">Start a new game</button>
+        </div>
+
+        <ul class="simon-squares">
+          <li class="simon-squares__item simon-squares__item--red">w</li>
+          <li class="simon-squares__item simon-squares__item--blue">d</li>
+          <li class="simon-squares__item simon-squares__item--green">a</li>
+          <li class="simon-squares__item simon-squares__item--yellow">s</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="container__quick-stats container__quick-stats--hidden">
+      Level <span class="container__game-level">0</span>
+    </div>
+  </div>
+
+  <script src="js/game.js"></script>
+</body>
+
+</html>
